@@ -16,7 +16,7 @@ public class GreetingController {
 	public @ResponseBody Gretting gretting(
 			@RequestParam(value="name", required=false, defaultValue="World") String name
 			){
-		return new Gretting(counter.incrementAndGet(), String.format(template, name));
+		return new Gretting(counter.incrementAndGet(), String.format(template, name)); 
 	}
 }
 
